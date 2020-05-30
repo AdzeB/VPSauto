@@ -251,7 +251,7 @@ socket = r:TCP_NODELAY=1
 client = no
 
 [openvpn]
-accept = 587
+accept = 443
 connect = 127.0.0.1:1147
 cert = /etc/stunnel/stunnel.pem
 
@@ -391,7 +391,7 @@ echo "   - IPv6        : [OFF]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Application & Port Information"  | tee -a log-install.txt
 echo "   - OpenVPN		: TCP 1147 "  | tee -a log-install.txt
-echo "   - OpenVPN-Stunnel	: 587 "  | tee -a log-install.txt
+echo "   - OpenVPN-Stunnel	: 443 "  | tee -a log-install.txt
 echo "   - Dropbear		: 442"  | tee -a log-install.txt
 echo "   - Stunnel	: 443"  | tee -a log-install.txt
 echo "   - Squid Proxy	: 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
